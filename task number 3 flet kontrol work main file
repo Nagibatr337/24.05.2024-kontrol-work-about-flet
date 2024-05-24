@@ -46,8 +46,8 @@ def main(page: ft.Page):
 
                 ft.Row(
                     [
-                        ft.IconButton("DELETE_FOREVER_ROUNDED", on_click=reset_click),
-                        ft.IconButton("SAVE", on_click=save_result),
+                        ft.IconButton("DELETE", on_click=reset_click),
+                        ft.IconButton("SAVE_ALT", on_click=save_result),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER,
                 ),
