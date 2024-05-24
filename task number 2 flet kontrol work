@@ -23,12 +23,6 @@ def main(page: ft.Page):
         txt_number.value = "0"
         page.update()
 
-#save button
-    def save_result(e):
-        result = txt_number.value
-        filename = "result.txt"
-        with open(filename, "w") as file:
-            file.write(result)
 
 
     page.add(
@@ -47,7 +41,6 @@ def main(page: ft.Page):
                 ft.Row(
                     [
                         ft.IconButton("DELETE_FOREVER_ROUNDED", on_click=reset_click),
-                        ft.IconButton("SAVE", on_click=save_result),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER,
                 ),
